@@ -1,82 +1,131 @@
 /* Reset CSS */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Barlow", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Barlow", sans-serif;
+  scroll-behavior: smooth;
 }
 
 /* Basic styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #004AAD;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; 
+  line-height: 1.6;
+  background-color: #042652;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a {
+text-decoration: none; /* Remove sublinhado padrão */
+  color: inherit; /* Herda a cor do texto do elemento pai */
+  cursor: pointer; 
 }
 
 header {
-    background-color: white;
-    color: #fff;
-    padding: 20px 10%;
-    position: fixed; /* torna o cabeçalho fixo */
-    width: 100%; /* ocupa toda a largura da janela */
-    top: 0; /* fixa o cabeçalho no topo */
-    z-index: 1000; /* garante que o cabeçalho esteja acima de outros elementos */
-    text-align: center;
-    color: #004AAD;
+  position: fixed; /* torna o cabeçalho fixo */
+  top: 0; /* fixa o cabeçalho no topo */
+  z-index: 1000; /* garante que o cabeçalho esteja acima de outros elementos */
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+nav {
+    margin: 30px 25%; 
+    width: 80%;
+    padding: 15px 20px;
+    color: white;
     display: flex;
-    justify-content: space-around;
     align-items: center;
-}
-
-.logo p {
-    margin-top: 0;
-    padding-top: 0;
-}
-
-header h1 {
-    margin: 0;
-}
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+} 
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 35px;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+  display: inline;
 }
 
 nav ul li a {
-    color: #747678;
-    text-decoration: none;
-    font-weight: 700;
+  color: #ffffff97;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 main {
-    padding-top: 100px; 
-    padding-right: 10%;
-    padding-left: 10%;
-    flex: 1
+  padding-top: 100px;
+  padding-right: 10%;
+  padding-left: 10%;
+  flex: 1;
 }
 
 section {
-    margin-bottom: 40px;
-    padding-bottom: 500px;
+  margin-bottom: 40px;
+  color:white;
 }
 
-section h2{
-    color: white;
+section .about {
+  background-image: linear-gradient(rgb(9, 4, 103), rgba(5, 88, 78, 0.87)),
+    url("./src/fundo3.png");
+  background-size: cover; /* This will ensure that your background covers the full section */
+  background-repeat: no-repeat; /* This ensures the image doesn't repeat */
+  background-position: center center; /* This will center your image in the section both horizontally and vertically */
+  padding: 50px 0;
+  height: 800px;
+  padding-top: 100px;
+  padding-right: 10%;
+  padding-left: 10%;
+  flex: 1;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
+
+
+section .about img {
+  margin-top: 30px;
+}
+
+section .about button {
+    margin-top: 10px;
+    padding: 15px 100px;
+    background-color: #ffffff14;
+    border-radius: 15px;
+    color: #ffffff;
+    font-weight: 500;
+   
+}
+
+.btn {
+border: none;
+  background: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  padding: 0;
+  transition: background-color 0.3s ease; 
+  display: inline-block; 
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Cor de fundo escura no hover */
+  }
 
 footer {
-    background-color: #fff;
-    color: black;
-    padding: 20px;
-    text-align: center;
+  background-color: #fff;
+  color: black;
+  padding: 20px;
+  text-align: center;
 }
