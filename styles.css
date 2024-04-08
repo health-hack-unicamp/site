@@ -10,7 +10,7 @@
 /* Basic styles */
 body {
   line-height: 1.6;
-  background-color: #042652;
+  background-color: #004AAD;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -57,7 +57,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #ffffff97;
+  color: #ffffffcb;
   text-decoration: none;
   font-weight: 500;
 }
@@ -69,13 +69,17 @@ main {
   flex: 1;
 }
 
+main p {
+  color: #ABCDED;
+}
+
 section {
   margin-bottom: 40px;
   color:white;
 }
 
 section .about {
-  background-image: linear-gradient(rgb(9, 4, 103), rgba(5, 88, 78, 0.87)),
+  background-image: linear-gradient( #004badaf, #5272ffbe),
     url("./src/fundo3.png");
   background-size: cover; /* This will ensure that your background covers the full section */
   background-repeat: no-repeat; /* This ensures the image doesn't repeat */
