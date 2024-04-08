@@ -40,8 +40,8 @@ nav {
     display: flex;
     align-items: center;
     border-radius: 10px;
-    display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 } 
 
 nav ul {
@@ -132,4 +132,32 @@ footer {
   color: black;
   padding: 20px;
   text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    position:absolute; /* torna o cabeçalho fixo */
+    z-index: 1000; /* garante que o cabeçalho esteja acima de outros elementos */
+  }
+  nav ul {
+    flex-direction: column;
+    color: white;
+    font-weight: 800;
+  } 
+
+  nav ul li a {
+    color: white;
+    font-weight: 800;
+  }
+  section .about  {
+    align-items: center;
+    
+  }
+  section .about img {
+    display: none;
+  }
+
+  .btn {
+    display: none;
+  }
 }
