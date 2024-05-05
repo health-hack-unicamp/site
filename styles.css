@@ -17,17 +17,18 @@ body {
 }
 
 a {
-text-decoration: none; /* Remove sublinhado padrão */
+  text-decoration: none; /* Remove sublinhado padrão */
   color: inherit; /* Herda a cor do texto do elemento pai */
   cursor: pointer; 
 }
 
+/*---------------- header ----------------*/
 header {
   position: fixed; /* torna o cabeçalho fixo */
   top: 0; /* fixa o cabeçalho no topo */
   z-index: 1000; /* garante que o cabeçalho esteja acima de outros elementos */
   color: #004AAD;
-  margin: 3% 10%;
+  margin: 3% 10%;  
 }
 
 nav {
@@ -55,10 +56,59 @@ nav ul li a {
   font-weight: 400;
 }
 
+/*---------------- fim header ----------------*/
+
+/*---------------- home ----------------*/
+#home {
+  letter-spacing: 0;
+  line-height: 1;
+  margin-top: 100px;
+}
+#home p {
+  margin: 0;
+  padding: 0;
+  color: #0A3268;
+}
+
+#home h1 {
+  color: #004AAD;
+  font-size: 12vh;
+  font-weight: 900;
+  margin: 0;
+  padding: 0;
+}
+
+#home button {
+  margin-top: 30px;
+  padding: 10px 30px; 
+  text-decoration: none;
+  border-style: none;
+  background-color: #004AAD;
+  color: white;
+  border-radius: 15px;
+  margin-bottom: 5%;
+}
+
+#home button a {
+  text-decoration: none;
+  border-style: none;
+  background-color: #004AAD;
+  color: white;
+}
+
+#home h5 {
+  font-weight: 600;
+  color: #0A3268;
+  font-size: 1.2rem;
+  margin: 2% 0;
+}
+
+
+/*---------------- fim home ----------------*/
+
 main {
   padding-top: 100px;
-  padding-right: 10%;
-  padding-left: 10%;
+  padding: 5% 10%;
   flex: 1;
 }
 
