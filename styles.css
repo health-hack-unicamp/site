@@ -145,6 +145,13 @@ nav ul li a {
 
 /*---------------- fim cronograma ----------------*/
 
+/*---------------- organizacao ----------------*/
+#organizacao img {
+  margin-top: 3%;
+}
+
+/*---------------- fim organizacao ----------------*/
+
 
 .btn {
 border: none;
