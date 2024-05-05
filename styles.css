@@ -5,12 +5,12 @@
   box-sizing: border-box;
   font-family: "Barlow", sans-serif;
   scroll-behavior: smooth;
+  background-color: #F5F2EC;
 }
 
 /* Basic styles */
 body {
   line-height: 1.6;
-  background-color: #004AAD;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -26,21 +26,15 @@ header {
   position: fixed; /* torna o cabeçalho fixo */
   top: 0; /* fixa o cabeçalho no topo */
   z-index: 1000; /* garante que o cabeçalho esteja acima de outros elementos */
-  text-align: center;
-  width: 100%;
-  display: flex;
-  align-items: center;
+  color: #004AAD;
+  margin: 3% 10%;
 }
 
 nav {
-    margin: 30px 25%; 
-    width: 80%;
-    padding: 15px 20px;
-    color: white;
     display: flex;
-    align-items: center;
     border-radius: 10px;
-    justify-content: center;
+    width: 80vw;
+    justify-content: space-between;
     flex-wrap: wrap;
 } 
 
@@ -57,9 +51,8 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #ffffffcb;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 main {
@@ -79,12 +72,7 @@ section {
 }
 
 section .about {
-  background-image: linear-gradient( #004badaf, #5272ffbe),
-    url("./src/fundo3.png");
-  background-size: cover; /* This will ensure that your background covers the full section */
-  background-repeat: no-repeat; /* This ensures the image doesn't repeat */
-  background-position: center center; /* This will center your image in the section both horizontally and vertically */
-  padding: 50px 0;
+   padding: 50px 0;
   height: 800px;
   padding-top: 100px;
   padding-right: 10%;
