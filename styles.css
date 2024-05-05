@@ -56,16 +56,22 @@ header {
   top: 0; /* fixa o cabeçalho no topo */
   z-index: 1000; /* garante que o cabeçalho esteja acima de outros elementos */
   color: #004AAD;
-  margin: 3% 10%;  
+  padding: 2% 10%;  
+  background-color: white;
 }
 
 nav {
     display: flex;
     border-radius: 10px;
     width: 80vw;
+    background-color: white;
     justify-content: space-between;
     flex-wrap: wrap;
 } 
+
+nav img {
+  background-color: white;
+}
 
 nav ul {
   margin: 0;
@@ -73,15 +79,18 @@ nav ul {
   display: flex;
   justify-content: center;
   gap: 35px;
+  background-color: white;
 }
 
 nav ul li {
   display: inline;
+  background-color: white;
 }
 
 nav ul li a {
   text-decoration: none;
   font-weight: 400;
+  background-color: white;
 }
 
 /*---------------- fim header ----------------*/
@@ -182,29 +191,33 @@ footer {
 
 
 @media only screen and (max-width: 600px) {
-  header {
-    position:absolute; /* torna o cabeçalho fixo */
-    z-index: 1000; /* garante que o cabeçalho esteja acima de outros elementos */
-  }
-  nav ul {
-    flex-direction: column;
-    color: white;
-    font-weight: 800;
+  nav {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    flex-wrap: wrap;
   } 
 
-  nav ul li a {
-    color: white;
-    font-weight: 800;
+  nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
-  section .about  {
-    align-items: center;
-    
-  }
-  section .about img {
-    display: none;
+  main {
+    margin-top: 20%;
   }
 
-  .btn {
-    display: none;
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10vh;
+    margin-top: 6%;
   }
+
+  #organizacao img {
+    width: 100%;
+  }
+
 }
