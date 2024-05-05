@@ -38,7 +38,15 @@ main {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   gap: 10vh;
+  margin-top: 6%;
+}
+
+.content p {
+  color: #0A3268;
+  font-size: 1.2rem;
+  text-align: justify;
 }
 
 
@@ -128,49 +136,15 @@ nav ul li a {
 
 /*---------------- objetivo ----------------*/
 
-#about {
-  margin-top: 6%;
-}
-
-#about p {
-  color: #0A3268;
-  font-size: 1.2rem;
-  text-align: justify;
-}
-
 
 /*---------------- fim objetivo ----------------*/
 
 
-
-section .about {
-   padding: 50px 0;
-  height: 800px;
-  padding-top: 100px;
-  padding-right: 10%;
-  padding-left: 10%;
-  flex: 1;
-  color: white;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-}
+/*---------------- cronograma ----------------*/
 
 
-section .about img {
-  margin-top: 30px;
-}
+/*---------------- fim cronograma ----------------*/
 
-section .about button {
-    margin-top: 10px;
-    padding: 15px 100px;
-    background-color: #ffffff14;
-    border-radius: 15px;
-    color: #ffffff;
-    font-weight: 500;
-   
-}
 
 .btn {
 border: none;
@@ -185,7 +159,7 @@ border: none;
 
 .btn:hover {
     background-color: rgba(0, 0, 0, 0.1); /* Cor de fundo escura no hover */
-  }
+}
 
 footer {
   background-color: #fff;
