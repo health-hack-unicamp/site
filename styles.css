@@ -173,11 +173,13 @@ border: none;
 }
 
 footer {
-  background-color: #fff;
-  color: black;
-  padding: 20px;
+  background-color: #004AAD;
   text-align: center;
+  padding: 10px;
+  color: white;
 }
+
+
 
 @media only screen and (max-width: 600px) {
   header {
